@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<allEvents xmlns="http://xml.netbeans.org/schema/timeTable">
+    <allEvents>
+        <eventId>cmpsciSOFT30161Lab9:00 - 10:00</eventId>
+        <date>11-02-2019</date>
+        <moduleId>SOFT30161</moduleId>
+        <moduleName>Advanced Software Engineering</moduleName>
+        <courseId>cmpsci</courseId>
+        <tutor>cmp3kingn</tutor>
+        <tutorEmail>cmp3kingn@my.ntu.ac.uk</tutorEmail>
+        <tutorOffice>NHB206</tutorOffice>
+        <timeStamp>9:00 - 10:00</timeStamp>
+        <roomId>MAE103</roomId>
+        <type>Lab</type>
+        <group>A</group>
+    </allEvents>
+    <allEvents>
+        <eventId>cmpsciSOFT30161Lecture9:00 - 10:00</eventId>
+        <date>18-02-2019</date>
+        <moduleId>SOFT30161</moduleId>
+        <moduleName>Advanced Software Engineering</moduleName>
+        <courseId>cmpsci</courseId>
+        <tutor>cmp3kingn</tutor>
+        <tutorEmail>cmp3kingn@my.ntu.ac.uk</tutorEmail>
+        <tutorOffice>NHB206</tutorOffice>
+        <timeStamp>9:00 - 10:00</timeStamp>
+        <roomId>MAE001</roomId>
+        <type>Lecture</type>
+        <group></group>
+    </allEvents>
+</allEvents>

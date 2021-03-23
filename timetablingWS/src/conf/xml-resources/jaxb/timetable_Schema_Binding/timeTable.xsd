@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             targetNamespace="http://xml.netbeans.org/schema/timeTable"
+             xmlns:tns="http://xml.netbeans.org/schema/timeTable"
+           elementFormDefault="qualified">
+    
+    
+    
+    <xsd:element name="Student">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="seed" type="xsd:string"></xsd:element>
+                <xsd:element name="studentID" type="xsd:string"></xsd:element>
+                <xsd:element name="password" type="xsd:string"></xsd:element>
+                <xsd:element name="studentName" type="xsd:string"></xsd:element>
+                <xsd:element name="courseId" type="xsd:string"></xsd:element>
+                 <xsd:element name="timetable" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>  
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+
+    <xsd:element name="Staff">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="seed" type="xsd:string"></xsd:element>
+                <xsd:element name="staffID" type="xsd:string"></xsd:element>
+                <xsd:element name="password" type="xsd:string"></xsd:element>
+                <xsd:element name="staffName" type="xsd:string"></xsd:element>
+                <xsd:element name="staffEmail" type="xsd:string"></xsd:element>
+                <xsd:element name="staffOffice" type="xsd:string"></xsd:element>
+                <xsd:element name="course" type="xsd:string"></xsd:element>
+                <xsd:element name="timetable" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>  
+                <xsd:element name="pendingRequestsIds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:element name="Administrator">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="adminID" type="xsd:string"></xsd:element>
+                <xsd:element name="password" type="xsd:string"></xsd:element>
+                <xsd:element name="seed" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+
+        <xsd:complexType name ="Course">
+            <xsd:sequence>
+                <xsd:element name = "courseID" type="xsd:string"></xsd:element>
+                <xsd:element name = "courseName" type="xsd:string"></xsd:element>
+                <xsd:element name="moduleIds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+                <xsd:element name="staffIds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+        
+        <xsd:element name="Courses">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="courseCollection" type="tns:Course" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+ 
+    <xsd:element name="Module">
+        <xsd:complexType>
+             <xsd:sequence>          
+                 <xsd:element name="moduleID" type="xsd:string"></xsd:element>
+                 <xsd:element name="moduleName" type="xsd:string"></xsd:element>
+                 <xsd:element name="moduleGroupIds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+                 <xsd:element name="studentIds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+             </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+   
+   <xsd:element name="Group">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name ="groupID" type="xsd:string"></xsd:element>
+                <xsd:element name ="groupSize" type="xsd:int"></xsd:element>
+                <xsd:element name="studentIds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+   </xsd:element>
+    
+    <xsd:complexType name="Request">
+        <xsd:sequence>
+            <xsd:element name="requestID" type="xsd:string"></xsd:element>
+            <xsd:element name ="courseID" type="xsd:string"></xsd:element>
+            <xsd:element name ="moduleID" type="xsd:string"></xsd:element>
+            <xsd:element name ="groupID" type="xsd:string"></xsd:element>
+            <xsd:element name ="staffID" type="xsd:string"></xsd:element>
+            <xsd:element name="request" type="xsd:string"></xsd:element>
+            <xsd:element name="status" type="xsd:string" ></xsd:element>
+        </xsd:sequence>     
+    </xsd:complexType>
+    
+    <xsd:element name="Requests">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="requestCollection" type="tns:Request" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+   
+    
+   
+    <xsd:complexType name ="Event">
+        <xsd:sequence>
+            <xsd:element name="eventId" type ="xsd:string"></xsd:element>
+            <xsd:element name="date" type="xsd:string"></xsd:element>
+            <xsd:element name="moduleId" type ="xsd:string"></xsd:element>
+            <xsd:element name="moduleName" type ="xsd:string"></xsd:element>
+            <xsd:element name="courseId" type ="xsd:string"></xsd:element>
+            <xsd:element name="tutor" type="xsd:string"></xsd:element>
+            <xsd:element name="tutorEmail" type="xsd:string"></xsd:element>
+            <xsd:element name="tutorOffice" type="xsd:string"></xsd:element>  
+            <xsd:element name="timeStamp" type="xsd:string"></xsd:element>  
+            <xsd:element name="roomId" type="xsd:string"></xsd:element>
+            <xsd:element name="type" type="xsd:string"></xsd:element>
+            <xsd:element name="group" type="xsd:string"></xsd:element> 
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="allEvents">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name ="allEvents" type ="tns:Event" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+   
+   <xsd:complexType name="Room">
+        <xsd:sequence>          
+            <xsd:element name="roomID" type="xsd:string"></xsd:element>
+            <xsd:element name="capacity" type="xsd:int"></xsd:element>
+            <xsd:element name="building" type="xsd:string"></xsd:element>
+            <xsd:element name="type" type="xsd:string"></xsd:element> 
+        </xsd:sequence>       
+    </xsd:complexType>
+    
+    <xsd:element name="Rooms">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="roomCollection" type="tns:Room" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+      
+</xsd:schema>

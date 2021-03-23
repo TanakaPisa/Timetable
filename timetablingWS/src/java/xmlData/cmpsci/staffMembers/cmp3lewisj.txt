@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Staff xmlns="http://xml.netbeans.org/schema/timeTable">
+    <seed>rrqailmziv</seed>
+    <staffID>cmp3lewisj</staffID>
+    <password>password</password>
+    <staffName>James Lewis</staffName>
+    <staffEmail>cmp3lewisj@my.ntu.ac.uk</staffEmail>
+    <staffOffice>ERD115</staffOffice>
+    <course>cmpsci</course>
+    <timetable>cmpsciSOFT30161Lab14:00 - 15:00</timetable>
+</Staff>

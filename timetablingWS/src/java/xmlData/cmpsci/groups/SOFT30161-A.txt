@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Group xmlns="http://xml.netbeans.org/schema/timeTable">
+    <groupID>SOFT30161-A</groupID>
+    <groupSize>2</groupSize>
+    <studentIds>N0682255</studentIds>
+    <studentIds>N0687265</studentIds>
+</Group>

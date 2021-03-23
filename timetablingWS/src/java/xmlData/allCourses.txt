@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Courses xmlns="http://xml.netbeans.org/schema/timeTable">
+    <courseCollection>
+        <courseID>cmpsci</courseID>
+        <courseName>Computer Science</courseName>
+        <moduleIds>SOFT30161</moduleIds>
+        <moduleIds>SOFT30121</moduleIds>
+        <moduleIds>COMP30231</moduleIds>
+        <moduleIds>COMP30151</moduleIds>
+        <moduleIds>ISYS30221</moduleIds>
+        <moduleIds>ISC027</moduleIds>
+        <staffIds>cmp3kingn</staffIds>
+        <staffIds>cmp3lewisj</staffIds>
+        <staffIds>cmp3ingdamb</staffIds>
+    </courseCollection>
+</Courses>

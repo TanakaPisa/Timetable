@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rooms xmlns="http://xml.netbeans.org/schema/timeTable">
+    <roomCollection>
+        <roomID>MAE001</roomID>
+        <capacity>120</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lecture</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE002</roomID>
+        <capacity>60</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lecture</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE101</roomID>
+        <capacity>25</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lab</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE102</roomID>
+        <capacity>25</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lab</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE103</roomID>
+        <capacity>30</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lab</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE104</roomID>
+        <capacity>20</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lab</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE105</roomID>
+        <capacity>2</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lab</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE106</roomID>
+        <capacity>5</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Lab</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE201</roomID>
+        <capacity>30</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Seminar</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE202</roomID>
+        <capacity>25</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Seminar</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE203</roomID>
+        <capacity>3</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Seminar</type>
+    </roomCollection>
+    <roomCollection>
+        <roomID>MAE204</roomID>
+        <capacity>6</capacity>
+        <building>Mary Ann Evens</building>
+        <type>Seminar</type>
+    </roomCollection>
+</Rooms>

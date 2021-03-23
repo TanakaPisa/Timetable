@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Requests xmlns="http://xml.netbeans.org/schema/timeTable">
+    <requestCollection>
+        <requestID>cmp3kingnSOFT301610</requestID>
+        <courseID>cmpsci</courseID>
+        <moduleID>Advanced Software Engineering</moduleID>
+        <groupID>A</groupID>
+        <staffID>cmp3kingn</staffID>
+        <request>ffdfaefgagrfgf</request>
+        <status>Accepted</status>
+    </requestCollection>
+    <requestCollection>
+        <requestID>cmp3kingnSOFT301611</requestID>
+        <courseID>cmpsci</courseID>
+        <moduleID>Advanced Software Engineering</moduleID>
+        <groupID>A</groupID>
+        <staffID>cmp3kingn</staffID>
+        <request>edsdfdfdfsfd</request>
+        <status>Denied</status>
+    </requestCollection>
+    <requestCollection>
+        <requestID>cmp3kingnSOFT301612</requestID>
+        <courseID>cmpsci</courseID>
+        <moduleID>Advanced Software Engineering</moduleID>
+        <groupID>A</groupID>
+        <staffID>cmp3kingn</staffID>
+        <request>hello Nigel</request>
+        <status>Accepted</status>
+    </requestCollection>
+    <requestCollection>
+        <requestID>cmp3kingnSOFT301613</requestID>
+        <courseID>cmpsci</courseID>
+        <moduleID>Advanced Software Engineering</moduleID>
+        <groupID>A</groupID>
+        <staffID>cmp3kingn</staffID>
+        <request>oggaboo</request>
+        <status>Accepted</status>
+    </requestCollection>
+</Requests>

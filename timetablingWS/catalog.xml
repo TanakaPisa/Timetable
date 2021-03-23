@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/n0620500/Documents/timeTable/Timetable/timetablingWS/src/java/org/me/timetable/timeTable.xsd" uri="src/conf/xml-resources/jaxb/timetable_Schema_Binding/timeTable.xsd"/>
+</catalog>

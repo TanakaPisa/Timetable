@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module xmlns="http://xml.netbeans.org/schema/timeTable">
+    <moduleID>SOFT30161</moduleID>
+    <moduleName>Advanced Software Engineering</moduleName>
+    <moduleGroupIds>SOFT30161-A</moduleGroupIds>
+    <studentIds>N0682255</studentIds>
+    <studentIds>N0687265</studentIds>
+</Module>

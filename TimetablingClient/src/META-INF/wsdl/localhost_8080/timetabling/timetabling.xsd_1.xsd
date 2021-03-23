@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://xml.netbeans.org/schema/timeTable">
+
+<xs:element name="Staff">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="seed" type="xs:string"/>
+<xs:element name="staffID" type="xs:string"/>
+<xs:element name="password" type="xs:string"/>
+<xs:element name="staffName" type="xs:string"/>
+<xs:element name="staffEmail" type="xs:string"/>
+<xs:element name="staffOffice" type="xs:string"/>
+<xs:element name="course" type="xs:string"/>
+<xs:element name="timetable" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="pendingRequestsIds" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Student">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="seed" type="xs:string"/>
+<xs:element name="studentID" type="xs:string"/>
+<xs:element name="password" type="xs:string"/>
+<xs:element name="studentName" type="xs:string"/>
+<xs:element name="courseId" type="xs:string"/>
+<xs:element name="timetable" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="Event">
+<xs:sequence>
+<xs:element name="eventId" type="xs:string"/>
+<xs:element name="date" type="xs:string"/>
+<xs:element name="moduleId" type="xs:string"/>
+<xs:element name="moduleName" type="xs:string"/>
+<xs:element name="courseId" type="xs:string"/>
+<xs:element name="tutor" type="xs:string"/>
+<xs:element name="tutorEmail" type="xs:string"/>
+<xs:element name="tutorOffice" type="xs:string"/>
+<xs:element name="timeStamp" type="xs:string"/>
+<xs:element name="roomId" type="xs:string"/>
+<xs:element name="type" type="xs:string"/>
+<xs:element name="group" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Request">
+<xs:sequence>
+<xs:element name="requestID" type="xs:string"/>
+<xs:element name="courseID" type="xs:string"/>
+<xs:element name="moduleID" type="xs:string"/>
+<xs:element name="groupID" type="xs:string"/>
+<xs:element name="staffID" type="xs:string"/>
+<xs:element name="request" type="xs:string"/>
+<xs:element name="status" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

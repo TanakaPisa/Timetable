@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module xmlns="http://xml.netbeans.org/schema/timeTable">
+    <moduleID>ISC027</moduleID>
+    <moduleName>Interactive Media &amp; Graphics</moduleName>
+    <studentIds>N0690954</studentIds>
+</Module>

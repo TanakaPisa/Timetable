@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Staff xmlns="http://xml.netbeans.org/schema/timeTable">
+    <seed>vcsxwjeehy</seed>
+    <staffID>cmp3kingn</staffID>
+    <password>password</password>
+    <staffName>Nigel King</staffName>
+    <staffEmail>cmp3kingn@my.ntu.ac.uk</staffEmail>
+    <staffOffice>NHB206</staffOffice>
+    <course>cmpsci</course>
+    <timetable>cmpsciSOFT30161Lab11:00 - 12:00</timetable>
+    <timetable>cmpsciSOFT30161Lab9:00 - 10:00</timetable>
+    <timetable>cmpsciSOFT30161Lecture9:00 - 10:00</timetable>
+    <pendingRequestsIds>1</pendingRequestsIds>
+    <pendingRequestsIds>cmp3kingnSOFT301611</pendingRequestsIds>
+    <pendingRequestsIds>cmp3kingnSOFT301612</pendingRequestsIds>
+    <pendingRequestsIds>cmp3kingnSOFT301613</pendingRequestsIds>
+</Staff>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Staff xmlns="http://xml.netbeans.org/schema/timeTable">
+    <seed>inmlfxsdcb</seed>
+    <staffID>cmp3ingdamb</staffID>
+    <password>password</password>
+    <staffName>Benjamin Ingdam</staffName>
+    <staffEmail>cmp3ingdamb@my.ntu.ac.uk</staffEmail>
+    <staffOffice>ERD117</staffOffice>
+    <course>cmpsci</course>
+</Staff>

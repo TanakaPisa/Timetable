@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://timetableWebServices/" xmlns:ns1="http://xml.netbeans.org/schema/timeTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://timetableWebServices/">
+
+<xs:import namespace="http://xml.netbeans.org/schema/timeTable" schemaLocation="http://localhost:8080/timetabling/timetabling?xsd=1"/>
+
+<xs:element name="Null" type="tns:Null"/>
+
+<xs:element name="NullResponse" type="tns:NullResponse"/>
+
+<xs:element name="NullStaff" type="tns:NullStaff"/>
+
+<xs:element name="NullStaffResponse" type="tns:NullStaffResponse"/>
+
+<xs:element name="addEvents" type="tns:addEvents"/>
+
+<xs:element name="addEventsResponse" type="tns:addEventsResponse"/>
+
+<xs:element name="checkSeed" type="tns:checkSeed"/>
+
+<xs:element name="checkSeedResponse" type="tns:checkSeedResponse"/>
+
+<xs:element name="getAllEvents" type="tns:getAllEvents"/>
+
+<xs:element name="getAllEventsResponse" type="tns:getAllEventsResponse"/>
+
+<xs:element name="getCourseIds" type="tns:getCourseIds"/>
+
+<xs:element name="getCourseIdsResponse" type="tns:getCourseIdsResponse"/>
+
+<xs:element name="getFacultyMembers" type="tns:getFacultyMembers"/>
+
+<xs:element name="getFacultyMembersInfo" type="tns:getFacultyMembersInfo"/>
+
+<xs:element name="getFacultyMembersInfoResponse" type="tns:getFacultyMembersInfoResponse"/>
+
+<xs:element name="getFacultyMembersResponse" type="tns:getFacultyMembersResponse"/>
+
+<xs:element name="getGroups" type="tns:getGroups"/>
+
+<xs:element name="getGroupsResponse" type="tns:getGroupsResponse"/>
+
+<xs:element name="getModules" type="tns:getModules"/>
+
+<xs:element name="getModulesResponse" type="tns:getModulesResponse"/>
+
+<xs:element name="getMyEvents" type="tns:getMyEvents"/>
+
+<xs:element name="getMyEventsResponse" type="tns:getMyEventsResponse"/>
+
+<xs:element name="getRequests" type="tns:getRequests"/>
+
+<xs:element name="getRequestsResponse" type="tns:getRequestsResponse"/>
+
+<xs:element name="getRooms" type="tns:getRooms"/>
+
+<xs:element name="getRoomsResponse" type="tns:getRoomsResponse"/>
+
+<xs:element name="getSentRequests" type="tns:getSentRequests"/>
+
+<xs:element name="getSentRequestsResponse" type="tns:getSentRequestsResponse"/>
+
+<xs:element name="getStaffLoginInfo" type="tns:getStaffLoginInfo"/>
+
+<xs:element name="getStaffLoginInfoResponse" type="tns:getStaffLoginInfoResponse"/>
+
+<xs:element name="getStudent" type="tns:getStudent"/>
+
+<xs:element name="getStudentResponse" type="tns:getStudentResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="modifyEvents" type="tns:modifyEvents"/>
+
+<xs:element name="modifyEventsResponse" type="tns:modifyEventsResponse"/>
+
+<xs:element name="removeEvents" type="tns:removeEvents"/>
+
+<xs:element name="removeEventsResponse" type="tns:removeEventsResponse"/>
+
+<xs:element name="respondToRequest" type="tns:respondToRequest"/>
+
+<xs:element name="respondToRequestResponse" type="tns:respondToRequestResponse"/>
+
+<xs:element name="sendRequest" type="tns:sendRequest"/>
+
+<xs:element name="sendRequestResponse" type="tns:sendRequestResponse"/>
+
+<xs:element name="updateSeed" type="tns:updateSeed"/>
+
+<xs:element name="updateSeedResponse" type="tns:updateSeedResponse"/>
+
+<xs:complexType name="updateSeed">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSeedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Null">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NullResponse">
+<xs:sequence>
+<xs:element name="return" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="seed" type="xs:string" form="qualified"/>
+<xs:element name="studentID" type="xs:string" form="qualified"/>
+<xs:element name="password" type="xs:string" form="qualified"/>
+<xs:element name="studentName" type="xs:string" form="qualified"/>
+<xs:element name="courseId" type="xs:string" form="qualified"/>
+<xs:element name="timetable" type="xs:string" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeEvents">
+<xs:sequence>
+<xs:element name="arg0" type="ns1:Event" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeEventsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addEvents">
+<xs:sequence>
+<xs:element name="arg0" type="ns1:Event" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addEventsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getModules">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getModulesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSentRequests">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSentRequestsResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Request" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyEvents">
+<xs:sequence>
+<xs:element name="arg0" type="ns1:Event" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyEventsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="respondToRequest">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="respondToRequestResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllEvents">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllEventsResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Event" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCourseIds">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCourseIdsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFacultyMembers">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFacultyMembersResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NullStaff">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NullStaffResponse">
+<xs:sequence>
+<xs:element name="return" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="seed" type="xs:string" form="qualified"/>
+<xs:element name="staffID" type="xs:string" form="qualified"/>
+<xs:element name="password" type="xs:string" form="qualified"/>
+<xs:element name="staffName" type="xs:string" form="qualified"/>
+<xs:element name="staffEmail" type="xs:string" form="qualified"/>
+<xs:element name="staffOffice" type="xs:string" form="qualified"/>
+<xs:element name="course" type="xs:string" form="qualified"/>
+<xs:element name="timetable" type="xs:string" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="pendingRequestsIds" type="xs:string" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudent">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStaffLoginInfo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStaffLoginInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMyEvents">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMyEventsResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Event" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRequests">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRequestsResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Request" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFacultyMembersInfo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFacultyMembersInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkSeed">
+<xs:sequence>
+<xs:element name="seed" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkSeedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRooms">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendRequest">
+<xs:sequence>
+<xs:element name="newRequest" type="ns1:Request" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGroups">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGroupsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

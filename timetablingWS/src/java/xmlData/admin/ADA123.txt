@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Administrator xmlns="http://xml.netbeans.org/schema/timeTable">
+    <adminID>ADA123</adminID>
+    <password>Dogs123</password>
+    <seed>0sigidfsdo12</seed>
+</Administrator>

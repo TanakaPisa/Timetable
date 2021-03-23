@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Student xmlns="http://xml.netbeans.org/schema/timeTable">
+    <seed>qunfxfgist</seed>
+    <studentID>N0682255</studentID>
+    <password>password</password>
+    <studentName>Tom Webb</studentName>
+    <courseId>cmpsci</courseId>
+    <timetable>cmpsciSOFT30161Lab9:00 - 10:00</timetable>
+    <timetable>cmpsciSOFT30161Lecture9:00 - 10:00</timetable>
+</Student>

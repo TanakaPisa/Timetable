@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Student xmlns="http://xml.netbeans.org/schema/timeTable">
+    <studentID>N0727476</studentID>
+    <password>password</password>
+    <studentName>Nabeel Mir</studentName>
+    <courseId>cmpsci</courseId>
+</Student>

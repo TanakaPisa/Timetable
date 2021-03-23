@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module xmlns="http://xml.netbeans.org/schema/timeTable">
+    <moduleID>ISYS30221</moduleID>
+    <moduleName>Artificial Intelligence</moduleName>
+    <studentIds>N0682255</studentIds>
+    <studentIds>N0673230</studentIds>
+    <studentIds>N0690954</studentIds>
+    <studentIds>N0727476</studentIds>
+    <studentIds>N0719344</studentIds>
+    <studentIds>N0620500</studentIds>
+    <studentIds>N0689061</studentIds>
+    <studentIds>N0687265</studentIds>
+</Module>

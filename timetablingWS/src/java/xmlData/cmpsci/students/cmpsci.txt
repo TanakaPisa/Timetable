@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Student xmlns="http://xml.netbeans.org/schema/timeTable">
+    <timetable>cmpsciSOFT30161Laboratory</timetable>
+    <timetable>cmpsciSOFT30161Laboratory</timetable>
+    <timetable>cmpsciSOFT30161Laboratory</timetable>
+    <timetable>cmpsciSOFT30161Laboratory</timetable>
+    <timetable>cmpsciSOFT30161Seminar</timetable>
+    <timetable>cmpsciSOFT30161Seminar</timetable>
+    <timetable>cmpsciSOFT30161Laboratory</timetable>
+    <timetable>cmpsciSOFT30161Laboratory</timetable>
+    <timetable>cmpsciSOFT30161Seminar</timetable>
+    <timetable>cmpsciSOFT30161Seminar</timetable>
+    <timetable>cmpsciSOFT30161Seminar</timetable>
+    <timetable>cmpsciSOFT30161Seminar</timetable>
+</Student>
